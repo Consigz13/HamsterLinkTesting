@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hamster Link Router-n</title>
+</head>
+
+<body>
+
+  <main id="app">
+
+    <!-- Header -->
+    <header id="app-header">
+      <h1>Hello! My name is <span id="name-display">$name</span></h1>
+      <h2>Project Hamster Link $router-n</h2>
+    </header>
+
+    <!-- Name Input Row -->
+    <section id="name-section">
+      <label for="name-input">Enter your name:</label>
+      <input
+        type="text"
+        id="name-input"
+        name="name"
+        placeholder="e.g. Stormi"
+      />
+      <button id="name-submit" type="button">Send</button>
+    </section>
+
+    <!-- Chat Container -->
+    <section id="chat-section">
+
+      <!-- Messages Display -->
+      <div id="chat-messages" aria-live="polite">
+        <!-- Messages will be injected here -->
+      </div>
+
+      <!-- Message Input Row -->
+      <form id="message-form">
+        <input
+          type="text"
+          id="message-input"
+          name="message"
+          placeholder="Type a message to communicate with $name here..."
+        />
+        <button type="submit">Send</button>
+      </form>
+
+    </section>
+
+  </main>
+
+</body>
+</html>
